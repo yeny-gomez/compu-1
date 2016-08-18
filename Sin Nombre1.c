@@ -4,24 +4,28 @@
 #include<math.h>
 
 
-void main(){
+int main(){
 	
 	int x;
-	long float  y,resta,mult,resul,numero;
+	float  y,resta,mult,resul,numero;
 	
 	printf("\n\nIngrese numero: ");
-	 scanf("%i",&numero);
+	 scanf("%f",&numero);
 	
 	y=numero/10;
 	x=numero/10;
 	
+	printf("%i %f %f  \n", x,y,numero);
+	
 	resta=y-x;
 	mult=resta*10;
-	resul=mult+resta;
+	//resul=mult+resta;
 	
-	printf("\n\n %.2f", y);
-	
+	printf("\n\n %i %.0f ", x,mult );
+	return 0;	
 }
+
+
 
 
 
